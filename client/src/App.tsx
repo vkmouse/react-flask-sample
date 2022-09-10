@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("/members").then(res => res.json()).then(
+    fetch("https://bsh38065.pythonanywhere.com/members").then(res => res.json()).then(
       data => {
         setData(data);
         console.log(data);
